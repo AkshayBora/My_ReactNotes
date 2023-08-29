@@ -1,15 +1,18 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const parent = React.createElement("div",{ id: "parent" },[
     React.createElement("div",{ id: "child1" },[ 
-        React.createElement( "h1", {id:"heading"}, "Hi i am Parent tag1"), 
-        React.createElement( "h2",{class:"heading2"},"Hi i am child tag1" ) 
+        React.createElement( "h1", {id:"heading"}, "Hi i am now new tag1✌"), 
+        React.createElement( "h2",{className:"heading2"},"Hi i am child tag1" ) 
     ]),
     React.createElement("div",{ id: "child2" },[ 
         React.createElement( "h1", {id:"heading"}, "Hi i am Parent tag2"), 
-        React.createElement( "h2",{class:"heading2"},"Hi i am child tag2" ) 
+        React.createElement( "h2",{className:"heading2"},"Hi i am child tag2" ) 
     ])]
 )
 
-console.log(parent)   //give object
+// console.log(parent)   //give object
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 //createRoot lets you create a root to display React components inside a browser DOM node.
