@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.res-card .description {
+  @apply text-lg mb-4 font-extralight leading-[19px] tracking-[-0.3px] md:mb-2 md:text-lg xl:text-lg xl:mb-4 2xl:mb-2 2xl:text-lg text-[rgba(2,6,12,0.6)] overflow-hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.shimmer-container .shimmer-img {
+  @apply h-[140px] w-[200px];
+}
+
+/*Animation to Shimmer Component Cards */
+.stroke {
+  @apply h-[15px];
+  background: #777;
+}
+.animate {
+  @apply animate-[shimmer_7s] bg-[1000px_100%];
+  animation-iteration-count: infinite;
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+}
+@keyframes shimmer {
+  from {
+    @apply bg-[-1000px_0];
+  }
+  to {
+    @apply bg-[1000px_0];
+  }
+}
